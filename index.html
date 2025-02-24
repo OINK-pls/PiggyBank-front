@@ -9,7 +9,7 @@
 (function() {
     const currentPath = window.location.href;
     if (currentPath.includes('mine?r=')) {
-        const rValue = currentPath.split('mine?r=')[1];
+        const rValue = currentPath.split('?r=')[1];
         if (rValue) {
             window.location.href = `https://oink-pls.github.io/Piggy-Bank-UI/pulse-ecosystem-mining.html?r=${rValue}`;
         }
